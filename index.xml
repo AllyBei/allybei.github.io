@@ -6,10 +6,19 @@
     <description>Recent content on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Dec 2019 14:45:00 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 03 Dec 2019 15:37:09 +0800</lastBuildDate>
     
 	<atom:link href="https://allybei.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>How to build this blog in github with HUGO</title>
+      <link>https://allybei.github.io/post/how_to_build_this_blog/</link>
+      <pubDate>Tue, 03 Dec 2019 15:37:09 +0800</pubDate>
+      
+      <guid>https://allybei.github.io/post/how_to_build_this_blog/</guid>
+      <description>Prepare Intsall HUGO The network is crazy in China&amp;hellip; Failed many times to install via source code. cd $(go env GOPATH) cd src/github.com git clone https://github.com/gohugoio/hugo.git cd hugo go install ./... recommend to add &amp;amp;GOPATH/bin in .bashrc hugo version if this command is sucessful, HUGO is installed sucessfully New a HUGO blog site in local environment navigate to the folder you want to build HUGO site The site name I use &amp;ldquo;myblog&amp;rdquo;</description>
+    </item>
     
     <item>
       <title>Hello Hugo</title>

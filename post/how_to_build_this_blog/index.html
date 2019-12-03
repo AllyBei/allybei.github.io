@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <title>How to build this blog in github with HUGO // My New Hugo Site</title>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.61.0-DEV" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="John Doe" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="https://allybei.github.io/css/main.min.f90f5edd436ec7b74ad05479a05705770306911f721193e7845948fb07fe1335.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="How to build this blog in github with HUGO"/>
+<meta name="twitter:description" content="Prepare Intsall HUGO The network is crazy in China&hellip; Failed many times to install via source code. cd $(go env GOPATH) cd src/github.com git clone https://github.com/gohugoio/hugo.git cd hugo go install ./... recommend to add &amp;GOPATH/bin in .bashrc hugo version if this command is sucessful, HUGO is installed sucessfully New a HUGO blog site in local environment navigate to the folder you want to build HUGO site The site name I use &ldquo;myblog&rdquo;"/>
+
+    <meta property="og:title" content="How to build this blog in github with HUGO" />
+<meta property="og:description" content="Prepare Intsall HUGO The network is crazy in China&hellip; Failed many times to install via source code. cd $(go env GOPATH) cd src/github.com git clone https://github.com/gohugoio/hugo.git cd hugo go install ./... recommend to add &amp;GOPATH/bin in .bashrc hugo version if this command is sucessful, HUGO is installed sucessfully New a HUGO blog site in local environment navigate to the folder you want to build HUGO site The site name I use &ldquo;myblog&rdquo;" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://allybei.github.io/post/how_to_build_this_blog/" />
+<meta property="article:published_time" content="2019-12-03T15:37:09+08:00" />
+<meta property="article:modified_time" content="2019-12-03T15:37:09+08:00" />
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="https://allybei.github.io"><img class="app-header-avatar" src="/avatar.jpg" alt="John Doe" /></a>
+      <h1>My New Hugo Site</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula turpis sit amet elit pretium.</p>
+      <div class="app-header-social">
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">How to build this blog in github with HUGO</h1>
+      <div class="post-meta">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Dec 3, 2019
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          1 min read
+        </div></div>
+    </header>
+    <div class="post-content">
+      <h1 id="prepare"><em>Prepare</em></h1>
+<h2 id="intsall-hugohttpsgithubcomgohugoiohugo">Intsall <a href="https://github.com/gohugoio/hugo">HUGO</a></h2>
+<h4 id="the-network-is-crazy-in-china-failed-many-times-to-install-via-source-code">The network is crazy in China&hellip; Failed many times to install via source code.</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd <span style="color:#66d9ef">$(</span>go env GOPATH<span style="color:#66d9ef">)</span>
+cd src/github.com
+git clone https://github.com/gohugoio/hugo.git
+cd hugo
+go install ./...
+</code></pre></div><h4 id="recommend-to-add-gopathbin-in-bashrc">recommend to add &amp;GOPATH/bin in .bashrc</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo version
+</code></pre></div><h4 id="if-this-command-is-sucessful-hugo-is-installed-sucessfully">if this command is sucessful, HUGO is installed sucessfully</h4>
+<h1 id="new-a-hugo-blog-site-in-local-environment"><em>New a HUGO blog site in local environment</em></h1>
+<p>navigate to the folder you want to build HUGO site
+The site name I use &ldquo;myblog&rdquo;</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo new site myblog
+</code></pre></div><p>Then you should select a <a href="https://themes.gohugo.io/">theme</a>
+I choose m10c here. Make sure you are in the blog site folder</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git clone https://github.com/vaga/hugo-theme-m10c.git themes/m10c
+</code></pre></div><p>New a blog post with name whatever.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo new post/introduce.md
+cd content/post/
+</code></pre></div><p>Write your own blog md file</p>
+<h4 id="make-sure-you-have-back-to-your-blog-site-root-path">Make sure you have back to your blog site root path</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo server -t m10c --buildDrafts
+</code></pre></div><h1 id="build-your-own-github-public-repo"><em>Build your own github public repo</em></h1>
+<p>New a public repo with name &ldquo;{You own GitHub username}.github.io&rdquo;</p>
+<h1 id="package-and-push-your-local-blog-to-github"><em>Package and push your local blog to GitHub</em></h1>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo --theme<span style="color:#f92672">=</span>m10c --baseUrl<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://allybei.github.io&#34;</span> --buildDrafts
+</code></pre></div><p>a folder named &ldquo;public&rdquo; is created</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd public/
+git init
+git add *
+git commit -m <span style="color:#e6db74">&#34;My First Blog&#34;</span>
+git remote add origin https://github.com/AllyBei/allybei.github.io.git
+git push -u origin master
+</code></pre></div>
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>
